@@ -1,4 +1,5 @@
 import React , { Component } from 'react';
+import CharacterList from './CharacterList';
 
 class App extends Component
 {
@@ -7,6 +8,7 @@ class App extends Component
             <div>
                 <h2>
                     SuperSquad
+                    <CharacterList />
                 </h2>
             </div>
         )
