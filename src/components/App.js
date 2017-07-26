@@ -2,22 +2,28 @@ import React , { Component } from 'react';
 import CharacterList from './CharacterList';
 import '../styles/index.css'; 
 import HeroList from './HeroList';
+import SquadStats from './SquadStats';
 
 class App extends Component
 {
     render(){
         return (
+            <h3>
             <div className="App">
                 <h2>
                     SuperSquad
-                    <div className="col-md-6">
+                </h2>
+                    <div className="col-md-4">
                     <CharacterList />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                     <HeroList />
                     </div>
-                </h2>
+                    <div className="col-md-4">
+                        <SquadStats />
+                    </div>
             </div>
+            </h3>
         )
     }
 }

@@ -5,7 +5,9 @@ import { bindActionCreators } from 'redux';
 
 class HeroList extends Component{
     render(){
+        console.log('this.props.heroes',this.props.heroes);
         return (
+            
             <div>
                 <h4>Your Hero Squad:</h4>
                 <ul className="list-group">
